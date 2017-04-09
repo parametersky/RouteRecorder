@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RadioGroup
+        android:id="@+id/check_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="4dp">
+
+        <RadioButton
+            android:id="@+id/radio_ch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="中文地图"
+            android:textSize="12sp"/>
+
+        <RadioButton
+            android:id="@+id/radio_en"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="英文地图"
+            android:textSize="12sp"/>
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/speed"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignTop="@id/map"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/check_language"
+        android:orientation="horizontal"
+        android:text="无"
+        android:textColor="@android:color/black"/>
+
+    <ImageView android:id="@+id/imageview" android:layout_width="100dp"
+               android:layout_height="100dp"
+               android:layout_alignLeft="@id/speed"
+               android:layout_below="@id/speed"/>
+    <ImageView android:id="@+id/imageview1" android:layout_width="100dp"
+               android:layout_height="100dp"
+               android:layout_toRightOf="@id/imageview"
+               android:layout_below="@id/speed"/>
+
+
+</RelativeLayout>
